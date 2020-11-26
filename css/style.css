@@ -1,0 +1,10 @@
+:root{
+    --color-principal:#ED7839;
+}
+
+body{
+    background-color: var(--color-principal);
+}
+h1{
+    color: var(--color-principal);
+}
