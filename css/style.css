@@ -1,3 +1,7 @@
 :root{
     --color-principal:#ED7839;
+    --clor-marrom:#725C5C;
+    --color-cinza:#4E4E4E;
+    --font-main: font-family:Quicksand;
+    --gradiende:linear-gradient(180deg, rgba(254,178,84,1) 35%, rgba(240,129,61,1) 67%);
 }
