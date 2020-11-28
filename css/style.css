@@ -57,7 +57,7 @@
 /*POSICIONAMENTO DE TUDO MENOS O MENU*/
 
 header{
-    width: calc(100% - 220px);
+    width: calc(100% - 240px);
     left: 220px;
     padding-left: 20px;
     position: relative;
