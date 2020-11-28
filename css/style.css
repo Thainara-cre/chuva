@@ -1,13 +1,16 @@
 /*FONTS GOOGLE*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 :root{
     --color-principal:#ED7839;
+    --color-escura: #333333;
     --color-laranja-claro:#FDF1EB;
     --color-marrom:#725C5C;
     --color-cinza:#4E4E4E;
     --color-cinza-escuro:#4D4D4D;
-    --font-main:'Quicksand', sans-serif;;
+    --font-main:'Quicksand', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
     --gradiende:linear-gradient(180deg, rgba(254,178,84,1) 35%, rgba(240,129,61,1) 67%);
     --font-gigante:30px;
     --font-maior:20px;
@@ -56,7 +59,7 @@
 
 /*POSICIONAMENTO DE TUDO MENOS O MENU*/
 
-header{
+header, article{
     width: calc(100% - 240px);
     left: 220px;
     padding-left: 20px;
@@ -65,4 +68,73 @@ header{
 
 header{
     background-color: var(--color-laranja-claro);
+    font-family: var(--font-roboto);
+    color: var(--color-marrom);
+    font-style: normal;    
+}
+
+header div #cima{
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header div #meio{
+    font-family: var(--font-roboto);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header div #baixo{
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header div #e-mail{
+    font-family: var(--font-maior);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: var(--color-escura);
+}
+
+header div #bem-vindo{
+    font-family: var(--color-escura);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;    
+}
+
+header div{
+    display: inline-block;
+}
+
+article h1{
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: var(--color-principal);
 }
