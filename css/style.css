@@ -1,7 +1,68 @@
+/*FONTS GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 :root{
     --color-principal:#ED7839;
-    --clor-marrom:#725C5C;
+    --color-laranja-claro:#FDF1EB;
+    --color-marrom:#725C5C;
     --color-cinza:#4E4E4E;
-    --font-main: font-family:Quicksand;
+    --color-cinza-escuro:#4D4D4D;
+    --font-main:'Quicksand', sans-serif;;
     --gradiende:linear-gradient(180deg, rgba(254,178,84,1) 35%, rgba(240,129,61,1) 67%);
+    --font-gigante:30px;
+    --font-maior:20px;
+    --font-media:14px;
+    --font-menor:12px;
+    --font-barra-cima:22px;
+}
+
+/*MENU LATERAL*/
+
+.menu{
+    width: 220px;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+
+.menu h1{
+    font-size: var(--font-gigante);
+    text-align: center;
+    font-family: roboto;
+    line-height: 35px;
+    background: var(--gradiende);
+    color:#ffff;
+    font-weight: bold;
+}
+
+.menu ul{
+    font-family: var(--font-main);
+    font-size: var(--font-media);
+    font-weight: 500px;
+    line-height: 18.75px;
+    color: var(--color-marrom);
+}
+
+.menu ul li{
+    height: 30px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    text-indent: 15px;
+}
+
+.menu ul li:hover{
+    background-color: var(--color-laranja-claro);
+    border-left: 4px solid #ED7839;
+} 
+
+/*POSICIONAMENTO DE TUDO MENOS O MENU*/
+
+header{
+    width: calc(100% - 220px);
+    left: 220px;
+    padding-left: 20px;
+    position: relative;
+}
+
+header{
+    background-color: var(--color-laranja-claro);
 }
