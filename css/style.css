@@ -31,7 +31,7 @@
 .menu h1{
     font-size: var(--font-gigante);
     text-align: center;
-    font-family: roboto;
+    font-family: var(--font-roboto);
     line-height: 35px;
     background: var(--gradiende);
     color:#ffff;
@@ -59,7 +59,7 @@
 
 /*POSICIONAMENTO DE TUDO MENOS O MENU*/
 
-header, article{
+header, section{
     width: calc(100% - 240px);
     left: 220px;
     padding-left: 20px;
@@ -128,7 +128,19 @@ header div{
     display: inline-block;
 }
 
-article h1{
+header #rolar{
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 15px;
+    overflow-y: hidden;
+}
+
+section h1{
     font-family: var(--font-roboto);
     font-size: 20px;
     font-style: normal;
@@ -137,4 +149,57 @@ article h1{
     letter-spacing: 0.05em;
     text-align: left;
     color: var(--color-principal);
+    height: 10px;
+    width: 750px;
+    padding-top: 20px;
+}
+
+section figure #analise{
+    height: 54px;
+    width: 700px;
+    font-family: var(--font-roboto);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;    
+    color: #ffff;
+    position: absolute;
+    top: 120px;
+    position: fixed;
+    z-index: 10;
+    left: 280px;
+    padding-top: 40px;
+}
+
+section figure svg{
+    position: absolute;
+    top: 50px;
+    padding-top: 40px;
+}
+
+section figure figcaption p{
+    font-family: var(--font-roboto);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #ffff;
+}
+
+section figure figcaption #menor{
+    font-size: 20px;
+}
+
+section figure figcaption #maior{
+    font-size: 25px;
+}
+
+section #Beatriz{
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    padding-top: 40px;
 }
